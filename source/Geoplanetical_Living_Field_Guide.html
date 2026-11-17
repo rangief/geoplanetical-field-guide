@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light">
+<title>Geoplanetical | Living Field Guide</title>
+<style>
+:root{--ink:#1d2c37;--muted:#526475;--bg:#edf2f3;--panel:#fff;--border:#d5e0e4;--navy:#112b40;--teal:#007b79;--gold:#ffcf70;}
+[hidden]{display:none!important}
+.skip{position:absolute;left:12px;top:-80px;background:white;padding:10px;z-index:5} .skip:focus{top:12px} :focus-visible{outline:3px solid #ac6600;outline-offset:3px}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.68 system-ui,-apple-system,Segoe UI,Arial,sans-serif} a{color:#046c75} a:hover{text-decoration-color:#d7a44a} 
+.hero{background:linear-gradient(130deg,#0e2637 0%,#16465c 70%,#2b5f66 100%);color:#fff;padding:38px max(22px,calc((100vw - 1310px)/2));}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.15em;color:#bce5df;text-transform:uppercase} h1,h2,h3{line-height:1.22;letter-spacing:-.02em} .hero h1{font-size:clamp(29px,4.6vw,52px);margin:12px 0} .hero p{max-width:760px;color:#dbebec;margin:5px 0 17px}
+.hero .pill{display:inline-block;padding:4px 11px;margin:0 8px 8px 0;border:1px solid #6b9aa7;border-radius:50px;font-size:12px;color:#e3f2f4}
+.shell{display:grid;grid-template-columns:275px minmax(0,850px);gap:24px;max-width:1300px;margin:26px auto;padding:0 20px;align-items:start}
+.sidebar{position:sticky;top:18px;background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px;max-height:calc(100vh - 36px);overflow:auto;box-shadow:0 4px 20px #1837490c}
+.sidebar h2{font-size:15px;margin:2px 0 10px} input{width:100%;padding:10px 12px;border:1px solid #a4bcc4;border-radius:8px;font-size:14px;margin-bottom:9px;outline-offset:2px}
+.navlink{display:flex;gap:10px;color:#2c4352;text-decoration:none;padding:6px 8px;border-radius:8px;font-size:14px;line-height:1.4} .navlink span{color:#738e9e;font-variant-numeric:tabular-nums} .navlink:hover,.navlink:focus{background:#edf5f5}
+.hint{font-size:12px;color:var(--muted)} .content{min-width:0} .notice{padding:14px 17px;border:1px solid #c8d9df;border-left:4px solid #258585;border-radius:9px;background:#faffff;margin-bottom:22px}
+.chapter{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:0 4px 20px #1837490b;padding:27px clamp(19px,4vw,42px);margin-bottom:24px;scroll-margin-top:20px}
+.chapter h2{font-size:clamp(23px,2.4vw,31px);margin:16px 0 20px;color:#13384c} .chapter h3{font-size:21px;color:#16485b;margin-top:30px}.chapter h4{font-size:17px;margin-top:23px} .chapter p{margin:13px 0}.chapter li{padding:2px 0}.chapter blockquote{margin:20px 0;padding:3px 18px;border-left:4px solid #e5ad55;background:#fff8ea;border-radius:4px} .chapter blockquote p{margin:12px 0}
+.section-top{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;border-bottom:1px solid #e4ebee;padding-bottom:14px}
+.status{padding:3px 10px;font-size:11px;font-weight:800;letter-spacing:.04em;border-radius:50px} .ok{background:#e2f4eb;color:#216241} .danger{background:#ffe2e2;color:#8f2626} .amber{background:#fff0cd;color:#85500d} .review{font-size:12px;color:var(--muted)}
+.chapter table{display:block;overflow-x:auto;border-collapse:collapse;max-width:100%;font-size:14px}.chapter th,.chapter td{border:1px solid #dbe5e9;padding:9px 11px;text-align:left;vertical-align:top}.chapter th{background:#eaf2f4}
+.empty{background:#fff;padding:20px;border-radius:12px;display:none} footer{color:var(--muted);font-size:12px;padding:14px 4px 40px} code{background:#eaf1f3;border-radius:3px;padding:2px 4px} 
+@media(max-width:890px){.shell{grid-template-columns:1fr}.sidebar{position:static;max-height:none}.navlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr))}.hero{padding:30px 20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<a class="skip" href="#guide">Skip to guide</a>
+<header class="hero"><div class="eyebrow">Independent community handbook · Edition 0.1</div><h1>Geoplanetical<br> The Living Field Guide</h1>
+<p>Run a country. Fix the actual problem. Avoid accidentally financing three disasters at once. Friendly explanations for a complicated world.</p>
+<span class="pill">Recorded game version: 1.1.4</span><span class="pill">Steam build: 26709373</span><span class="pill">0 chapters awaiting review</span>
+</header>
+<div class="shell"><aside class="sidebar"><h2>Find what you need</h2><label for="search" class="hint">Filter chapters by a word or topic</label><input id="search" type="search" placeholder="Try: inflation, war, electricity" autocomplete="off" aria-label="Search guide chapters"><div id="count" class="hint" role="status" aria-live="polite"></div><nav class="navlist" aria-label="Guide contents"><a class="navlink" href="#00-start-here"><span>01</span> Start here</a>
+<a class="navlink" href="#01-first-year"><span>02</span> Your first year</a>
+<a class="navlink" href="#02-economy-and-trade"><span>03</span> Economy &amp; trade</a>
+<a class="navlink" href="#03-supply-chains"><span>04</span> Supply chains</a>
+<a class="navlink" href="#04-construction"><span>05</span> Construction projects</a>
+<a class="navlink" href="#05-electricity-and-reserves"><span>06</span> Electricity &amp; reserves</a>
+<a class="navlink" href="#06-budget-and-debt"><span>07</span> Budget &amp; debt</a>
+<a class="navlink" href="#07-inflation-and-currency"><span>08</span> Inflation &amp; currency</a>
+<a class="navlink" href="#08-politics-and-laws"><span>09</span> Politics &amp; laws</a>
+<a class="navlink" href="#09-unrest-and-population"><span>10</span> Unrest &amp; population</a>
+<a class="navlink" href="#10-warfare"><span>11</span> Warfare</a>
+<a class="navlink" href="#11-diplomacy-and-sanctions"><span>12</span> Diplomacy &amp; sanctions</a>
+<a class="navlink" href="#12-research-intelligence-space"><span>13</span> Research, intelligence &amp; space</a>
+<a class="navlink" href="#13-troubleshooting"><span>14</span> Fix common problems</a>
+<a class="navlink" href="#14-patch-114"><span>15</span> What changed in 1.1.4</a>
+<a class="navlink" href="#15-glossary"><span>16</span> Glossary</a></nav><p class="hint">This guide was reviewed against the recorded patch notes. Older mechanics may still need in-game testing.</p></aside>
+<main id="guide" class="content" tabindex="-1"><div class="notice"><strong>A living guide, not a crystal ball.</strong> Chapter badges show when they were last checked. A red <strong>Needs review</strong> badge means a newer patch may have changed that advice. View <a href="https://steamcommunity.com/app/940230/allnews/">official Steam news</a> for new announcements.</div>
+<div id="empty" class="empty">No chapters match that search. Try fewer words or a different topic.</div>
+<section class="chapter" id="00-start-here" data-title="Start here"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Start here: run a country, not a spreadsheet</h2>
+<p><strong>The big idea:</strong> In <em>Geoplanetical</em>, nearly every clever move has a side effect. Your job isn't to make every number green. It's to figure out which problem is actually causing the others.</p>
+<blockquote>
+<p><strong>The first rule:</strong> Pause, save, inspect, change one or two things, then let the simulation respond. Changing fifteen policies at once is a superb way to learn absolutely nothing.</p>
+</blockquote>
+<h3>Your opening five-minute check</h3>
+<ol>
+<li><strong>Are you already in trouble?</strong> Look for war, sanctions, political crises or an imminent election. Those may matter more than your grand industrial ambitions.</li>
+<li><strong>Is the economy actually growing?</strong> Open <strong>Economy → Summary</strong> and distinguish the growth number from prices, jobs and capacity.</li>
+<li><strong>Where is the state money going?</strong> Open <strong>State Budget → Summary</strong>. Cash, annual balance and debt are separate things.</li>
+<li><strong>Can the country power its promises?</strong> Check <strong>Electricity</strong> for unserved demand, grid pressure and fuel supply.</li>
+<li><strong>Are people getting better off?</strong> Read approval and household conditions, not just GDP.</li>
+</ol>
+<h3>The game's basic chain reaction</h3>
+<p>A new factory needs workers, electricity and inputs. If any one is missing, it may sit idle. If the inputs become more expensive, prices rise. Higher prices can upset households. Then your popularity falls just as your expensive new project comes due. Congratulations: you've created three ministries' worth of paperwork with one click.</p>
+<h3>What's new in 1.1.4?</h3>
+<p>The developer redesigned the <strong>country panel</strong>, made the main <strong>GDP, growth and inflation</strong> figures more useful as entry points, and added <strong>Twaddle</strong>, a fictional social feed reacting to events. Treat Twaddle as flavour and context, not a substitute for checking the actual game panels. The patch also changed important economic and political balancing.</p>
+<p><strong>Remember:</strong> This guide is practical advice, not a list of universal magic percentages. When a future patch changes a mechanic, the relevant chapter will be flagged for review.</p>
+<p><em>Evidence: community beginner guides plus official 1.1.4 notes. Review triggers: interface, simulation balance, starting conditions.</em></p>
+</section><section class="chapter" id="01-first-year" data-title="Your first year"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Your first year without setting everything on fire</h2>
+<p><strong>The big idea:</strong> The first year is for learning your country's limits. You don't need a perfect country by December. You need a country that still has options.</p>
+<h3>Day one: take an inventory</h3>
+<p>Pause and create a named save. Check wars, sanctions, cash flow, debt rating, inflation causes, electricity, approval and the election calendar. Write down just the top <strong>three problems</strong>. If there are ten problems, congratulations, but you still only have three hands' worth of attention.</p>
+<h3>First month: fix the immediate blockage</h3>
+<ul>
+<li><strong>Already at war?</strong> Read the War Council and your military position before touching domestic policy.</li>
+<li><strong>Budget losing money?</strong> Identify the largest adjustable spending and revenue lines; small deliberate changes beat panicked wholesale cuts.</li>
+<li><strong>Industry stalled?</strong> Check whether orders, workers, inputs or electricity are missing. A factory isn't a customer.</li>
+<li><strong>Election coming?</strong> Consider how long unpopular reforms take to affect approval and voter expectations.</li>
+</ul>
+<h3>Months two to six: watch cause and effect</h3>
+<p>Let policy changes settle. Many outcomes happen at monthly reviews or after construction and research delays. Check whether the <em>reason</em> you made the decision is improving. If you raised a tariff to support local industry, did output move, or did you merely make imported inputs pricier?</p>
+<h3>Rest of the year: commit selectively</h3>
+<p>Choose one long-term bet: strengthen your energy supply, unclog construction, improve education, stabilise debt, or invest where real demand exists. Do not start five national megaprojects simply because five buttons are available.</p>
+<h4>Example: the ambitious new president</h4>
+<p>You inherit weak electricity and a large deficit. Building three factories first sounds impressive; fixing the supply of power and the construction bottleneck is more likely to make those factories useful later.</p>
+<p><strong>Avoid:</strong> Treating an old guide's timing estimates as exact in 1.1.4. The game is receiving frequent balancing changes.</p>
+<p><em>Evidence: warmaninger's first-year guide and grayassembly's beginner lessons; general sequence is editorial advice, not a tested universal optimal strategy.</em></p>
+</section><section class="chapter" id="02-economy-and-trade" data-title="Economy &amp; trade"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Why your economy isn't growing</h2>
+<p><strong>The big idea:</strong> Capacity is how much your firms <em>could</em> produce. Demand is what people and businesses actually want to buy. Building more capacity doesn't create the customers.</p>
+<h3>Check the right screen</h3>
+<p>Open <strong>Economy → Summary</strong> for activity and capacity. Then <strong>World Statistics → Production and Trade</strong> to inspect a specific good, including domestic production, imports, capacity and constraints.</p>
+<h4>When businesses have spare capacity</h4>
+<p>Your firms may be able to make more, but orders are going elsewhere or don't exist. Look at household demand, government purchasing and competition from imports before spending on more factories. A new warehouse full of unsold goods is not economic growth.</p>
+<h4>When firms are running flat out</h4>
+<p>Expansion starts to make sense only if there is demand to serve and the project can receive inputs, workers and electricity. Check <strong>Business &amp; Investment → Productive Investment</strong> and the good's available capacity.</p>
+<h4>When imports dominate</h4>
+<p>Tariffs may encourage some buyers to use local firms, but they also raise costs for firms that rely on imported materials. Trade agreements may limit the effect of a tariff. Compare the local producer price with the landed import price and examine the supply chain first.</p>
+<h4>Example: the car factory problem</h4>
+<p>You fund vehicle assembly but don't have reliable electronic components. The shiny new factory isn't much help if suppliers cannot deliver. Fix the bottleneck before buying more empty production floor.</p>
+<p><strong>Patch watch, 1.1.4:</strong> The developer revised economic balancing, industry and nationalisation behaviour, and fixed several annexation-related accounting problems. Old screenshots or precise tariff thresholds need rechecking.</p>
+<p><em>Evidence: warmaninger and Balee_92 community guides; official 1.1.4 balancing notes. Suggested diagnostic order is not a guaranteed formula.</em></p>
+</section><section class="chapter" id="03-supply-chains" data-title="Supply chains"><div class="section-top"><span class="status amber">Older numbers unverified</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Supply chains: find the missing link</h2>
+<p><strong>The big idea:</strong> A country isn't one big factory. It's a web. When an important input disappears, several industries can suffer at once.</p>
+<h3>Four kinds of inputs worth recognising</h3>
+<ul>
+<li><strong>Critical input:</strong> Something an industry cannot easily do without.</li>
+<li><strong>Substitute group:</strong> Several inputs may fill a similar role; losing one may not stop production if an alternative remains.</li>
+<li><strong>Yield input:</strong> Production may continue, but efficiency falls.</li>
+<li><strong>Energy:</strong> Even a complete supply chain won't perform if it cannot get electricity.</li>
+</ul>
+<p>These categories come from <strong>Balee_92's community-collected production map</strong>, recorded around 10 November 2026. The source reported <strong>107 goods</strong>. That count and the recipes must be checked against newer builds before being treated as current.</p>
+<h3>Follow a shortage upstream</h3>
+<p>Suppose military equipment is expensive. Don't jump straight to a new arms factory. Check whether machinery, semiconductors, electronics, chemicals, skilled workers or electricity are limiting existing plants. A shortage several steps upstream can make multiple finished products expensive at once.</p>
+<h3>A practical investigation</h3>
+<ol>
+<li>Open the affected good under <strong>World Statistics → Production and Trade</strong>.</li>
+<li>Check its inputs, electricity, staffing and delivery conditions where the game exposes them.</li>
+<li>Inspect the most constrained upstream good.</li>
+<li>Consider targeted production, trade adjustments or strategic reserves.</li>
+<li>Revisit the result after the next relevant simulation update.</li>
+</ol>
+<h4>What about electronic components?</h4>
+<p>Balee_92 reported that electronic components were a major dependency in the recorded recipes. That's a <strong>valuable clue</strong>, not a guarantee that the same count or recipe tree holds after 1.1.4.</p>
+<p><strong>Avoid:</strong> Copying a historical supply-chain diagram into a new guide and calling it a live 1.1.4 database. The full recipe dataset is not present in the supplied text file.</p>
+<p><em>Evidence: Balee_92, community-recorded recipes. Review triggers: goods catalogue, recipe changes, trade, strategic reserves.</em></p>
+</section><section class="chapter" id="04-construction" data-title="Construction projects"><div class="section-top"><span class="status amber">Older numbers unverified</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Construction: why your projects are stuck</h2>
+<p><strong>The big idea:</strong> Starting a project is easy. Getting materials, labour and usable building capacity is the hard part.</p>
+<h3>The 'why isn't it building?' checklist</h3>
+<p>Visit <strong>Economy → Construction Projects</strong> and read the project's actual warning. Are deliveries late? Is funding suspended? Is the construction order book overloaded? Is a required material missing? Those are different problems, and they need different fixes.</p>
+<h4>Project delayed by materials</h4>
+<p>Check the specific missing input. The older community analysis highlights <strong>industrial minerals</strong>, <strong>construction materials</strong>, water services and construction capacity as important parts of the building chain. Verify the current good's actual requirements before reacting.</p>
+<h4>Too many projects at once</h4>
+<p>Projects compete for builders and materials. Starting five new projects can slow all five. Prioritise the one that removes the biggest bottleneck, then let capacity recover.</p>
+<h4>Financing problem</h4>
+<p>Read whether the project is short of state funding, company funding or access to credit. Sending more materials won't repair a financing suspension.</p>
+<h4>Example: the road to nowhere</h4>
+<p>You approve power plants, a factory and new housing together. They all need construction services. If the local sector is already at capacity, the schedule can slip across the board. Try sequencing the capacity-creating project first.</p>
+<p><strong>Old-number warning:</strong> The original guide contains specific project-size percentages and timing estimates derived from earlier code. This edition deliberately does not treat those as guaranteed for 1.1.4.</p>
+<p><em>Evidence: warmaninger's construction guide; verify exact construction formulas and project requirements after each relevant patch.</em></p>
+</section><section class="chapter" id="05-electricity-and-reserves" data-title="Electricity &amp; reserves"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Electricity and reserves: keep the lights on</h2>
+<p><strong>The big idea:</strong> Building more electricity capacity won't fix every power shortage. Sometimes the problem is fuel, storage, the grid or the location of the plant.</p>
+<h3>Diagnose before building</h3>
+<p>Open <strong>Electricity</strong> and look at <strong>Unserved</strong>, the <strong>adequacy margin</strong>, fuel reserves and grid conditions. Ask which of these is actually limiting delivery.</p>
+<ul>
+<li><strong>Not enough usable generation:</strong> Consider new power capacity and its construction timeline.</li>
+<li><strong>Fuel not arriving:</strong> Inspect supply routes, sanctions and stockpiles before ordering another fuel-burning plant.</li>
+<li><strong>Renewables being wasted:</strong> Check whether the grid needs storage, flexible generation or a different mix.</li>
+<li><strong>No suitable site:</strong> The game's placement information should explain local output potential and blocked sites.</li>
+</ul>
+<h4>Why 1.1.4 matters here</h4>
+<p>The latest verified patch made power output more dependent on local conditions and added clearer site estimates. It also expanded strategic reserves, including materials such as lithium, cobalt, nickel, rare earths, uranium and phosphate. Exact storage limits should be taken from the current game panel rather than memorised from older guides.</p>
+<h4>Example: more solar, same blackout</h4>
+<p>Your country builds extra solar facilities but still loses power at the wrong time of day or season. That suggests checking storage, flexible generation and grid conditions instead of assuming the construction project failed.</p>
+<p><strong>Avoid:</strong> Treating a country's inherited electricity shortage and a <em>worsening</em> shortage as necessarily equivalent. The community guide reports baseline-related mechanics, but those details need current-game verification.</p>
+<p><em>Evidence: warmaninger's energy guide; official 1.1.4 energy and reserves changes.</em></p>
+</section><section class="chapter" id="06-budget-and-debt" data-title="Budget &amp; debt"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>The budget: cash, deficit and debt aren't twins</h2>
+<p><strong>The big idea:</strong> A country can have money in the bank while running a deficit, or have a balanced annual budget while still carrying enormous debt.</p>
+<h3>Three things to keep separate</h3>
+<ul>
+<li><strong>Cash:</strong> What the state has available now.</li>
+<li><strong>Balance or deficit:</strong> Whether incoming government revenue covers spending over the period shown.</li>
+<li><strong>Debt:</strong> Money owed from earlier borrowing and financing.</li>
+</ul>
+<p>Open <strong>State Budget → Summary</strong> and read all three, plus the cost of new borrowing and the country's rating.</p>
+<h3>If you're running out of money</h3>
+<p>Identify what's driving spending. Energy support, public services, defence and investments can behave differently. Don't cut everything equally. Consider what each cut would do to households, employment, approval and future output.</p>
+<h3>If debt is climbing</h3>
+<p>Check whether the state is still borrowing, whether debt repayments are due, and whether your interest costs are changing. A healthy-looking budget headline does not necessarily include every one-off project or military expense.</p>
+<h3>How to make a change without wrecking approval</h3>
+<p>Look at the projected consequences, move in small steps where possible, and watch how the economy responds. A sudden dramatic cut can solve one line and create a protest problem elsewhere.</p>
+<h4>Example: the cheap tax cut</h4>
+<p>You lower taxes to stimulate business but then borrow heavily to keep services running. The apparent win may be offset by weaker finances and higher borrowing costs. The useful question is whether output and household conditions actually improved.</p>
+<p><strong>Patch watch, 1.1.4:</strong> Budget balancing, tax reactions, and several annexation accounting cases changed. Never copy old exact revenue multipliers into this edition without fresh evidence.</p>
+<p><em>Evidence: warmaninger and grayassembly; official 1.1.4 fiscal/political balancing changes.</em></p>
+</section><section class="chapter" id="07-inflation-and-currency" data-title="Inflation &amp; currency"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Inflation: don't treat every price rise with the same hammer</h2>
+<p><strong>The big idea:</strong> A high inflation number tells you that prices are rising. It doesn't automatically tell you why.</p>
+<h3>First stop: Price pressure</h3>
+<p>Open <strong>Economy → Summary → Price Pressure</strong>. Check whether the game attributes price changes to shortages, production costs, taxes, monetary conditions or other factors. Then visit <strong>Money &amp; Finance → Currency &amp; Central Bank</strong> to inspect policy rates and currency conditions.</p>
+<h4>When prices rise because things are scarce</h4>
+<p>A higher interest rate won't instantly produce food, electricity or electronic components. Check the shortage itself, import restrictions, transport and realistic construction options.</p>
+<h4>When monetary policy is involved</h4>
+<p>Interest rates can influence spending and investment, but usually with delays and side effects. Before taking control of the central bank, understand what the current policy is doing and why.</p>
+<h4>When the currency is under pressure</h4>
+<p>Read foreign reserves, foreign obligations and monetary confidence. A dramatic currency change may be irreversible in some game configurations, according to the older community analysis. Confirm the current option's warning before clicking it.</p>
+<h4>Example: the tax that made everything worse</h4>
+<p>A tariff protects one local industry, but several other firms use that imported good. Their costs rise and inflation gets worse. The real fix may be a narrower tariff, cheaper inputs or new domestic production.</p>
+<p><strong>Important 1.1.4 correction:</strong> The developer explicitly changed the <strong>inflation algorithm</strong>. The early-launch guide by <strong>Traslo</strong> says interest-rate control is the main solution; that should be treated as <strong>historical player advice</strong>, not a current universal rule. Precise numerical claims from earlier builds require retesting.</p>
+<p><em>Evidence: Traslo's early-launch inflation guide; warmaninger's differentiated price-pressure analysis; official 1.1.4 patch.</em></p>
+</section><section class="chapter" id="08-politics-and-laws" data-title="Politics &amp; laws"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Politics: a good policy can still cost you the election</h2>
+<p><strong>The big idea:</strong> The game doesn't only ask what a policy costs. It asks <em>who</em> bears that cost and how they react.</p>
+<h3>Read more than one political number</h3>
+<p>Approval, stability, parliamentary support and an upcoming election are related but distinct. A popular government may still struggle with a coalition. A law may have support in principle but trigger a veto, partner dispute or public backlash.</p>
+<h3>Before proposing a law</h3>
+<ol>
+<li>Open <strong>Politics → Legislation</strong> and read the proposed effect.</li>
+<li>Check votes and coalition partners.</li>
+<li>Look for consequences for affected groups.</li>
+<li>Consider whether a smaller reform is safer than a sweeping change.</li>
+<li>Give the outcome time to appear before changing ten more laws.</li>
+</ol>
+<h4>Example: the reform that passes but hurts</h4>
+<p>You increase an unpopular tax to repair the budget. The law passes, but disposable income falls and approval suffers. The country may be financially steadier yet politically less stable. That isn't a contradiction; it's the trade-off.</p>
+<h3>New political wrinkles in 1.1.4</h3>
+<p>The patch expanded <strong>leader personalities</strong>, redesigned parts of the government UI, and added new legal options around <strong>political policing</strong>, <strong>exit rights</strong> and the <strong>role of the head of state</strong>. These introduce different consequences and choices from older beginner guides. Treat the in-game previews as the source for any specific outcome.</p>
+<p><strong>Avoid:</strong> Using an old exact approval threshold as though it guarantees victory or prevents every crisis. The developer adjusted tax reactions and social-group support in 1.1.4.</p>
+<p><em>Evidence: warmaninger on legislation and approval; grayassembly on population reaction; official 1.1.4 politics notes.</em></p>
+</section><section class="chapter" id="09-unrest-and-population" data-title="Unrest &amp; population"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Unrest, migration and people: listen to the cause</h2>
+<p><strong>The big idea:</strong> A protest is a symptom. Suppressing the symptom won't necessarily fix the problem producing it.</p>
+<h3>When a movement appears</h3>
+<p>Open <strong>People → Movements</strong>. Read its demand and what is pushing it. Is it about purchasing power, employment, public services, war, rights or a specific reform? Then inspect the group or region affected.</p>
+<p>A useful response starts with the underlying cause. If living costs are the issue, focus on prices and incomes. If unemployment is the issue, empty promises about GDP may not help. Strong security responses may have additional political and social consequences, so read the game's previews.</p>
+<h3>When your population shrinks</h3>
+<p>Check <strong>People → Demographics</strong> and <strong>People → Migration</strong>. Births, deaths, arrivals and departures have different causes and timelines. A better migration policy may not help if housing, safety or jobs are the real deterrent.</p>
+<h4>Example: the attractive country nobody moves to</h4>
+<p>You loosen immigration rules but still have poor housing access and economic instability. The problem may be your country's attractiveness or capacity to receive migrants, not the formal cap.</p>
+<h3>Version 1.1.4 changed the picture</h3>
+<p>The patch altered how some family policies affect births and introduced leader traits and laws that can influence public order and political reactions. That's a strong reason not to rely on the older guide's exact demographic timescales.</p>
+<p><strong>Avoid:</strong> Treating approval, stability, loyalty and the threat of unrest as the same number. They answer different questions.</p>
+<p><em>Evidence: warmaninger's protest and population sections; official 1.1.4 family/political changes.</em></p>
+</section><section class="chapter" id="10-warfare" data-title="Warfare"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>War: the invasion is only the beginning</h2>
+<p><strong>The big idea:</strong> Winning a battle, winning a war and living with the consequences are three different achievements.</p>
+<h3>Before declaring war</h3>
+<p>Open the <strong>War Council</strong> and inspect the campaign objectives, balance of forces, expected political cost, international reaction and possible sanctions. Check whether your troops can actually reach the target and whether you have permission to use allied or foreign bases for combat.</p>
+<h4>During a campaign</h4>
+<p>Look at <strong>Defense → Command</strong>, available formations, supply, equipment, military support and the war's progress. Don't assume that buying more equipment instantly creates a useful force at the right location.</p>
+<h4>The 1.1.4 changes worth knowing</h4>
+<p>The developer improved <strong>successive island landings</strong>, <strong>naval landing support</strong>, <strong>carrier-based air operations</strong>, <strong>strategic bomber range with support aircraft</strong>, and <strong>combat access to foreign-hosted bases</strong>. The war panel also gives clearer ways to request allied involvement and explains refusals.</p>
+<h4>Example: you have a base, but cannot attack from it</h4>
+<p>Owning aircraft at a friendly country's base does not necessarily mean the host allows attacks against your enemy. Check the war declaration and base-access information first. Otherwise your entire brilliant air plan might remain a very expensive parking arrangement.</p>
+<h3>After fighting stops</h3>
+<p>Peace arrangements, sanctions, occupation and territorial changes may affect state finances and population services. The 1.1.4 patch altered several annexation and occupation behaviours, so older examples should be treated as scenarios, not fixed calculations.</p>
+<p><strong>Avoid:</strong> Relying on an older guide's precise army power ratios without new gameplay evidence.</p>
+<p><em>Evidence: warmaninger's conquest/defence guide; official 1.1.4 war and access notes.</em></p>
+</section><section class="chapter" id="11-diplomacy-and-sanctions" data-title="Diplomacy &amp; sanctions"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Sanctions and diplomacy: find the real price of a war</h2>
+<p><strong>The big idea:</strong> Your army may win territory, but disrupted trade and angry neighbours can create problems for years.</p>
+<h3>What sanctions actually disrupt</h3>
+<p>Read <strong>Diplomacy → Sanctions and Crises</strong>. Identify who is imposing measures, what is restricted, and which important goods or routes are affected. Then check <strong>Production and Trade</strong> for the knock-on effects. Not every sanction has the same consequences.</p>
+<h3>Three useful questions</h3>
+<ol>
+<li><strong>What caused this sanction?</strong> A war, conduct during occupation, a diplomatic dispute or another issue may call for different responses.</li>
+<li><strong>Which partners matter most?</strong> Focus first on the flows your economy actually relies on.</li>
+<li><strong>What can you change?</strong> Negotiation, policy change, alternative suppliers or more resilient domestic capacity may each help, with different costs.</li>
+</ol>
+<h3>What's easier in 1.1.4?</h3>
+<p>The developer consolidated sanctions management and replies, added a way to approach willing countries more directly, and expanded automation for sanctions discussions. Check the current <strong>Sanctions</strong> screen rather than following an old button-by-button route.</p>
+<h4>Example: the factory hit by a distant war</h4>
+<p>You never sent a soldier abroad, but one of your industrial suppliers gets caught in sanctions. Local prices rise because an essential input no longer arrives normally. Investigate the trade link before blaming the factory manager.</p>
+<p><strong>Avoid:</strong> Thinking sanctions are always a single direct deduction from GDP. Their effects can travel through goods, prices, confidence, approval and budget receipts.</p>
+<p><em>Evidence: warmaninger's sanctions guide; official 1.1.4 sanctions changes.</em></p>
+</section><section class="chapter" id="12-research-intelligence-space" data-title="Research, intelligence &amp; space"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Research, intelligence and the Moon: play the long game</h2>
+<p><strong>The big idea:</strong> Some of the most exciting buttons in Geoplanetical have the longest delay before they pay off.</p>
+<h3>Research: discovery isn't deployment</h3>
+<p>Open <strong>Science &amp; Technology</strong> and inspect research points, delivery and whether the country can use the result. The older community analysis argues that education, administration and infrastructure affect how quickly innovations spread. Treat this as a useful framework and verify any exact current-game formula.</p>
+<h3>Intelligence: define the objective</h3>
+<p>Use <strong>Intelligence → Services</strong> to inspect available agents, staffing and operations. Don't treat intelligence spending as universally free or riskless based on an older guide. Look at the current costs and consequences.</p>
+<h3>Space: ambitious, but not magic money</h3>
+<p>Open <strong>Space → Program</strong>. Read mission access, research requirements, funding and settlement needs. A Moon programme can be a long-term national challenge, but it competes with domestic priorities.</p>
+<h4>Example: the Moon-first presidency</h4>
+<p>Your country is short of power, short of money and struggling with skilled workers. A space programme can still be your chosen goal, but understand what you postpone to fund it. There's nothing wrong with playing for the spectacle; just don't confuse spectacle with a free economic fix.</p>
+<p><strong>Patch watch, 1.1.4:</strong> The <strong>Space panel</strong> was redesigned with clearer mission tracking and settlement controls, while Agenda links and launch access were improved. The older guide's exact Moon research budgets and timelines are not verified for this build.</p>
+<p><em>Evidence: warmaninger's long-term planning section; official 1.1.4 space-panel notes.</em></p>
+</section><section class="chapter" id="13-troubleshooting" data-title="Fix common problems"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>The 'something is broken' checklist</h2>
+<p>Before reporting a bug, distinguish an unexpected outcome from a genuine fault. A project waiting for materials, an election lost after unpopular laws and an idle factory without orders may all be working exactly as designed.</p>
+<h3>Situation: factories won't grow</h3>
+<p><strong>Check:</strong> Orders, available capacity, missing inputs, workers and electricity. <strong>Try:</strong> Fix the limiting factor first, not the most visible number.</p>
+<h3>Situation: inflation keeps climbing</h3>
+<p><strong>Check:</strong> The <strong>Price Pressure</strong> breakdown, monetary conditions and shortages. <strong>Try:</strong> Address the largest plausible driver. <strong>Don't:</strong> Assume the central-bank rate fixes every kind of price rise.</p>
+<h3>Situation: construction is frozen</h3>
+<p><strong>Check:</strong> <strong>Construction Projects → Needs Attention</strong>, material deliveries and financing. <strong>Try:</strong> Read the exact warning and remove the relevant bottleneck.</p>
+<h3>Situation: popularity collapses</h3>
+<p><strong>Check:</strong> Real household conditions, recent legislation, elections, protests and public services. <strong>Try:</strong> Work back to the latest major change and its affected groups.</p>
+<h3>Situation: military units won't move or attack</h3>
+<p><strong>Check:</strong> Orders, access permissions, appropriate formations and supply. In 1.1.4, foreign-base combat permission is an especially useful thing to inspect.</p>
+<h3>Situation: the game crashes or behaves impossibly</h3>
+<p>Create a named save if safe, note your <strong>exact game version/build</strong>, affected country, installed mods, steps to reproduce and any on-screen error. Test the same situation without third-party code mods only when your own backups and mod installers make that safe. Never destroy working files merely to prove a point.</p>
+<h3>Situation: an online guide disagrees with your game</h3>
+<p>Check the guide's <strong>last reviewed build</strong>, the claim's evidence label and the most recent patch notes. If there is a mismatch, trust what the current game actually shows over old copied numbers and mark the guide section for review.</p>
+<p><em>Evidence: synthesis of four community guides; 1.1.4-specific note from official patch. Troubleshooting is advisory, not a proof that no bug exists.</em></p>
+</section><section class="chapter" id="14-patch-114" data-title="What changed in 1.1.4"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>What's changed in Geoplanetical 1.1.4?</h2>
+<p><strong>Verified reference:</strong> official patch notes titled <em>Balancing, Fixes, UI, (Everything) &amp; Twaddle Social Feed - 1.1.4</em> (16 November 2026). Public Steam build <strong>26709373</strong> is the latest verified reference at the creation of this edition, not a guarantee about future builds.</p>
+<h3>Changes that affect this handbook</h3>
+<table>
+<thead>
+<tr>
+  <th>Topic</th>
+  <th>Patch change</th>
+  <th>What to revisit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Economy &amp; prices</strong></td>
+  <td>Inflation algorithm, budget balance and tax reactions updated</td>
+  <td>Old inflation percentages, tax 'rules' and approval estimates</td>
+</tr>
+<tr>
+  <td><strong>Industry</strong></td>
+  <td>Nationalisation and some annexation accounting corrected</td>
+  <td>Old examples of buying, seizing and managing industries</td>
+</tr>
+<tr>
+  <td><strong>Politics</strong></td>
+  <td>Leader personalities, new political laws and government roles</td>
+  <td>Law outcomes, protests and political strategy</td>
+</tr>
+<tr>
+  <td><strong>War</strong></td>
+  <td>Landings, air operations, foreign-base access and military reporting</td>
+  <td>Old invasion and aircraft guides</td>
+</tr>
+<tr>
+  <td><strong>Sanctions</strong></td>
+  <td>Centralised management, responses and automated discussions</td>
+  <td>Old click-by-click sanctions routes</td>
+</tr>
+<tr>
+  <td><strong>Energy &amp; reserves</strong></td>
+  <td>Site-specific plant output and more reserve categories</td>
+  <td>Old energy-site and stockpile numbers</td>
+</tr>
+<tr>
+  <td><strong>Space</strong></td>
+  <td>Redesigned Space panel, improved launch-access links</td>
+  <td>Old button locations and settlement walkthroughs</td>
+</tr>
+<tr>
+  <td><strong>Navigation</strong></td>
+  <td>Country panel, top-bar drilldowns, trade screen and Twaddle</td>
+  <td>Old UI screenshots and menu routes</td>
+</tr>
+</tbody>
+</table>
+<h3>Not every old number survived</h3>
+<p>A numerical threshold in a November community guide is <strong>not automatically wrong</strong>, but it is <strong>not automatically verified</strong> just because the new update didn't mention it. That's why this edition uses decision rules and on-screen checks instead of filling the page with apparently exact calculations.</p>
+<h3>What happens when 1.1.5 arrives?</h3>
+<p>The new patch goes into <code>data/patches.json</code>; impacted chapters are flagged <strong>Needs review</strong>. Editors inspect the note and, where necessary, the current game. Only those chapters are revised and marked reviewed. The rest stay as they are. See <code>MAINTAINERS.md</code> for the commands.</p>
+<p><em>Source: Geoplanetical's official Steam announcement and public-build tracking.</em></p>
+</section><section class="chapter" id="15-glossary" data-title="Glossary"><div class="section-top"><span class="status ok">Checked against 1.1.4</span><span class="review">Last editorial review: 2026-11-18 · 26709373</span></div><h2>Plain-English glossary</h2>
+<p><strong>Approval:</strong> How positively people currently view the government. Not identical to stability or votes.</p>
+<p><strong>Stability:</strong> How solid the country's political order is. May move differently from short-term approval.</p>
+<p><strong>GDP:</strong> A broad measure of economic production. More GDP does not necessarily mean every household is better off.</p>
+<p><strong>Inflation:</strong> The speed at which prices are rising. Slower inflation doesn't mean prices went back down.</p>
+<p><strong>Real income:</strong> Money's purchasing power after taking price changes into account.</p>
+<p><strong>Capacity:</strong> The amount a business or industry could produce under the relevant conditions.</p>
+<p><strong>Demand:</strong> The orders and consumption that actually give producers something to sell.</p>
+<p><strong>Critical input:</strong> A material or service a production process cannot easily replace.</p>
+<p><strong>Tariff:</strong> A tax on imports. Can affect consumers and companies that use imported inputs.</p>
+<p><strong>Deficit:</strong> Government spending exceeding revenue over a period.</p>
+<p><strong>Debt:</strong> Money still owed from borrowing. Different from the money the state has today.</p>
+<p><strong>Foreign reserves:</strong> Foreign currency assets that can matter for currency arrangements and external payments.</p>
+<p><strong>Sanctions:</strong> Measures restricting trade or other international relationships; inspect the specific measures rather than assuming all sanctions work alike.</p>
+<p><strong>Unserved electricity:</strong> Demand for electricity that isn't being supplied.</p>
+<p><strong>Build number:</strong> A particular Steam game build. A numbered game version such as <code>1.1.4</code> may have more than one build.</p>
+<p><strong>Community finding:</strong> Advice or a claim supplied by players, which may need fresh verification.</p>
+<p><strong>Developer-confirmed:</strong> A feature or change reported in the game's official patch notes; not necessarily proof of every implied gameplay outcome.</p>
+<p><strong>Needs review:</strong> The guide has identified a relevant newer patch and hasn't revalidated this chapter yet.</p>
+<p><em>Evidence: simplified terminology drawn from the supplied guides; definitions are explanatory, not substitutes for the current game UI.</em></p>
+</section>
+<footer>Community-informed and not affiliated with Polytale Games. Original guidance credited to Balee_92, warmaninger, grayassembly and Traslo. Source and update method documented in <a href="source/SOURCES.md">Sources and credits</a> and <a href="source/MAINTAINERS.md">Maintainer workflow</a>. No automatic background updates.</footer></main></div>
+<script>
+(function(){const box=document.getElementById('search'),sections=[...document.querySelectorAll('.chapter')],links=[...document.querySelectorAll('.navlink')],counter=document.getElementById('count');
+const clean=s=>s.toLocaleLowerCase().normalize('NFKC');
+function update(){const words=clean(box.value).trim().split(/\s+/).filter(Boolean);let shown=0;sections.forEach(s=>{let hay=clean(s.textContent);let ok=words.every(w=>hay.includes(w));s.hidden=!ok;if(ok)shown++;});links.forEach(a=>{let sec=document.getElementById(a.getAttribute('href').slice(1));a.hidden=!!sec.hidden;});counter.textContent=shown+' of '+sections.length+' chapters shown';document.getElementById('empty').style.display=shown?'none':'block';}
+box.addEventListener('input',update);box.addEventListener('keydown',e=>{if(e.key==='Escape'){box.value='';update();}});function revealHash(){const target=document.getElementById(location.hash.slice(1));if(target&&target.classList.contains('chapter')&&target.hidden){box.value='';update();target.scrollIntoView();}}window.addEventListener('hashchange',revealHash);update();revealHash();})();
+</script></body></html>

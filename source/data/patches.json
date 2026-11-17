@@ -1,0 +1,27 @@
+[
+  {
+    "game_version": "1.1.4",
+    "build": "26709373",
+    "released_utc": "2026-11-16",
+    "recorded_on": "2026-11-18",
+    "source_url": "https://steamdb.info/patchnotes/26708962/",
+    "build_source_url": "https://charts.game/games/940230-geoplanetical/builds",
+    "summary": "Balancing, interface, Twaddle, inflation, politics, war, sanctions, power and space changes.",
+    "topics": [
+      "interface",
+      "economy",
+      "budget",
+      "inflation",
+      "industry",
+      "politics",
+      "population",
+      "war",
+      "military",
+      "sanctions",
+      "energy",
+      "reserves",
+      "space"
+    ],
+    "state": "incorporated-into-first-edition"
+  }
+]

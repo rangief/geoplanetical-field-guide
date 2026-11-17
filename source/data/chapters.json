@@ -1,0 +1,276 @@
+[
+  {
+    "id": "00-start-here",
+    "order": 0,
+    "title": "Start here",
+    "path": "chapters/00-start-here.md",
+    "topics": [
+      "basics",
+      "interface",
+      "politics",
+      "economy"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "01-first-year",
+    "order": 1,
+    "title": "Your first year",
+    "path": "chapters/01-first-year.md",
+    "topics": [
+      "basics",
+      "economy",
+      "budget",
+      "politics"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "02-economy-and-trade",
+    "order": 2,
+    "title": "Economy & trade",
+    "path": "chapters/02-economy-and-trade.md",
+    "topics": [
+      "economy",
+      "trade",
+      "industry"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "03-supply-chains",
+    "order": 3,
+    "title": "Supply chains",
+    "path": "chapters/03-supply-chains.md",
+    "topics": [
+      "industry",
+      "trade",
+      "economy"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "historical-details-unverified",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "04-construction",
+    "order": 4,
+    "title": "Construction projects",
+    "path": "chapters/04-construction.md",
+    "topics": [
+      "construction",
+      "industry",
+      "economy"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "historical-details-unverified",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "05-electricity-and-reserves",
+    "order": 5,
+    "title": "Electricity & reserves",
+    "path": "chapters/05-electricity-and-reserves.md",
+    "topics": [
+      "energy",
+      "reserves",
+      "industry"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "06-budget-and-debt",
+    "order": 6,
+    "title": "Budget & debt",
+    "path": "chapters/06-budget-and-debt.md",
+    "topics": [
+      "budget",
+      "economy",
+      "politics"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "07-inflation-and-currency",
+    "order": 7,
+    "title": "Inflation & currency",
+    "path": "chapters/07-inflation-and-currency.md",
+    "topics": [
+      "inflation",
+      "budget",
+      "economy"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "08-politics-and-laws",
+    "order": 8,
+    "title": "Politics & laws",
+    "path": "chapters/08-politics-and-laws.md",
+    "topics": [
+      "politics",
+      "interface"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "09-unrest-and-population",
+    "order": 9,
+    "title": "Unrest & population",
+    "path": "chapters/09-unrest-and-population.md",
+    "topics": [
+      "politics",
+      "population"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "10-warfare",
+    "order": 10,
+    "title": "Warfare",
+    "path": "chapters/10-warfare.md",
+    "topics": [
+      "war",
+      "military",
+      "politics"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "11-diplomacy-and-sanctions",
+    "order": 11,
+    "title": "Diplomacy & sanctions",
+    "path": "chapters/11-diplomacy-and-sanctions.md",
+    "topics": [
+      "diplomacy",
+      "sanctions",
+      "war",
+      "trade"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "12-research-intelligence-space",
+    "order": 12,
+    "title": "Research, intelligence & space",
+    "path": "chapters/12-research-intelligence-space.md",
+    "topics": [
+      "research",
+      "intelligence",
+      "space"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "13-troubleshooting",
+    "order": 13,
+    "title": "Fix common problems",
+    "path": "chapters/13-troubleshooting.md",
+    "topics": [
+      "basics",
+      "economy",
+      "industry",
+      "inflation",
+      "construction",
+      "war",
+      "interface"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "14-patch-114",
+    "order": 14,
+    "title": "What changed in 1.1.4",
+    "path": "chapters/14-patch-114.md",
+    "topics": [
+      "patchnotes"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  },
+  {
+    "id": "15-glossary",
+    "order": 15,
+    "title": "Glossary",
+    "path": "chapters/15-glossary.md",
+    "topics": [
+      "basics",
+      "interface"
+    ],
+    "last_reviewed_game_version": "1.1.4",
+    "last_reviewed_build": "26709373",
+    "last_reviewed_on": "2026-11-18",
+    "review_state": "current-with-caveats",
+    "pending_builds": [],
+    "verification_note": "Edited against 1.1.4 official notes and community sources; gameplay formulas/claims not independently retested."
+  }
+]
